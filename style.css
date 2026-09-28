@@ -1,0 +1,401 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    background-color: #FF7315;
+}
+
+.container {
+    position: relative;
+}
+
+.icon-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+
+    width: 30px;
+    height: 35px;
+}
+
+.icon-menu span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: #000;
+    border-radius: 2px;
+}
+
+.menus {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 35px;
+    background-color: #f64409;
+    min-width: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.menus a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 0.95rem;
+    border-bottom: 1px solid #f64409;
+}
+
+.menus a:hover {
+    background-color: #e9ab26;
+    color: #000;
+}
+
+.container:hover .menus {
+    display: block;
+}
+
+.barra-superior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f64409;
+    padding: 20px 40px;
+    width: 100%;
+    border-bottom: 1px solid #000;
+}
+
+.logo {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+}
+
+.menu-links {
+    display: flex;
+    list-style-type: none;
+    gap: 10vw;
+}
+
+.menu-links a {
+    display: flex;
+    width: 100px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+
+
+    background-color: #f64409;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-style: italic;
+}
+
+.menu-links a:hover {
+    background-color: #e9ab26;
+    box-shadow: 0 4px 5px #000;
+    color: #000;
+    transition: .3s;
+
+}
+
+#img-sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    padding: 5px;
+}
+
+.conteudo-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.texto-apresentacao {
+    color: #FBFADA;
+}
+
+.texto-apresentacao p.sub-topo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Lexend Zetta";
+    font-size: 1rem;
+    letter-spacing: 1px;
+    opacity: 0.9;
+    margin-bottom: 10px;
+    color: #ADBC9F;
+    font-weight: 900;
+}
+
+.texto-apresentacao h1 {
+    font-family: "Sansita Swashed";
+    font-size: 3.5rem;
+    font-style: italic;
+    font-weight: 800px;
+    margin-bottom: 45px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.texto-apresentacao p.sub-baixo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Lexend Zetta";
+    font-size: 0.8rem;
+    font-style: italic;
+    font-weight: 900;
+    opacity: 0.9;
+    color: #ADBC9F;
+}
+
+.imagem-hamburguer img {
+    width: 520px;
+    filter: drop-shadow(0px 50px 10px rgba(0, 0, 0, 0.5));
+}
+
+.mini-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+footer {
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+/**/
+.secao-combos {
+    padding: 60px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    border-top: 1.5px solid #d94b00;
+}
+
+.titulo-combos h2 {
+    font-family: "Sansita Swashed", cursive;
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #fbfada;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.sub-combos {
+    font-family: "Lexend Zetta", sans-serif;
+    font-size: 0.85rem;
+    color: #fff;
+    margin-bottom: 12px;
+    font-weight: 400;
+}
+
+.whatsapp-link {
+    display: inline-block;
+    font-family: "Lexend Zetta", sans-serif;
+    font-size: 0.85rem;
+    color: #fff;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.15);
+    padding: 8px 16px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    transition: background 0.3s;
+}
+
+.whatsapp-link:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.grid-combos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.combo-card {
+    background-color: #d84800;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.combo-card:hover {
+    transform: translateY(-5px);
+}
+
+.badge-desconto {
+    background-color: rgba(0, 0, 0, 0.25);
+    color: #fff;
+    font-family: "Lexend Zetta", sans-serif;
+    font-size: 0.7rem;
+    padding: 8px;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.combo-imagens {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 10px;
+    gap: 5px;
+    height: 160px;
+}
+
+.combo-imagens img {
+    width: 48%;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.combo-imagens-coxinha {
+    padding: 15px 10px;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.combo-imagens-coxinha img {
+    width: 85%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.combo-descricao {
+    background-color: #c03d00;
+    padding: 15px;
+    text-align: center;
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.combo-descricao h3 {
+    font-family: "Sansita Swashed", cursive;
+    font-size: 1.25rem;
+    color: #fff;
+    font-weight: 700;
+}
+
+.linha {
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+    border-top: 1.5px solid #d94b00;
+    font-weight: 500;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 1024px) {
+    .grid-combos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .menu-links {
+        display: none;
+    }
+    .conteudo-principal {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 30px 20px;
+    }
+    .texto-apresentacao h1 {
+        font-size: 3rem;
+    }
+    .imagem-hamburguer img {
+        width: 320px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .grid-combos {
+        grid-template-columns: 1fr;
+    }
+    .titulo-combos h2 {
+        font-size: 2.5rem;
+    }
+}
+
+footer {
+    background-color: #d84800;
+    color: #fff;
+    padding: 30px 20px 20px 20px;
+    border-top: 1.5px solid #c03d00;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.footer-conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 0.85rem;
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    padding-top: 15px;
+    font-family: "Lexend Zetta", sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
