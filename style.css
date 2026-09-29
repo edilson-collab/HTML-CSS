@@ -47,6 +47,7 @@ html {
 }
 
 .menus a {
+    font-family: "Sansita Swashed";
     display: flex;
     align-items: center;
     justify-content: center;
@@ -78,7 +79,7 @@ html {
 
 .logo {
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     font-weight: bold;
     letter-spacing: 3px;
     text-decoration: none;
@@ -92,9 +93,10 @@ html {
 }
 
 .menu-links a {
+    font-family: "Sansita Swashed";
     display: flex;
-    width: 100px;
-    height: 40px;
+    width: 150px;
+    height: 50px;
     align-items: center;
     justify-content: center;
     border-radius: 30px;
@@ -103,7 +105,7 @@ html {
     background-color: #f64409;
     color: #fff;
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: 2rem;
     font-style: italic;
 }
 
@@ -196,18 +198,26 @@ html {
     height: 100%;
     object-fit: cover;
 }
-
-footer {
-    text-align: center;
-    color: #fff;
-    padding: 20px;
-    font-size: 0.9rem;
-    letter-spacing: 0.5px;
+.local {
+    margin: 0 5px 0;
+    width: 20px;
+    height: 20px;
 }
+
+.linha {
+    font-family: "Lexend Zetta";
+    text-align: center;
+    color: #e7e303;
+    padding: 20px;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+    border-top: 1.5px solid #d94b00;
+    font-weight: 500;
+}
+
 /**/
 .secao-combos {
     padding: 60px 40px;
-    max-width: 1200px;
     margin: 0 auto;
     text-align: center;
     border-top: 1.5px solid #d94b00;
@@ -225,7 +235,7 @@ footer {
 .sub-combos {
     font-family: "Lexend Zetta", sans-serif;
     font-size: 0.85rem;
-    color: #fff;
+    color: #e7e303;
     margin-bottom: 12px;
     font-weight: 400;
 }
@@ -248,36 +258,14 @@ footer {
 }
 
 .grid-combos {
+    
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
 
-.combo-card {
-    background-color: #d84800;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    transition: transform 0.3s ease;
-}
-
 .combo-card:hover {
-    transform: translateY(-5px);
-}
-
-.badge-desconto {
-    background-color: rgba(0, 0, 0, 0.25);
-    color: #fff;
-    font-family: "Lexend Zetta", sans-serif;
-    font-size: 0.7rem;
-    padding: 8px;
-    text-align: center;
-    font-weight: 600;
-    letter-spacing: 0.5px;
+    transform: translateY(-10px);
 }
 
 .combo-imagens {
@@ -285,59 +273,15 @@ footer {
     justify-content: center;
     align-items: center;
     padding: 15px 10px;
-    gap: 5px;
+    width: 260px;
     height: 160px;
 }
 
 .combo-imagens img {
-    width: 48%;
-    height: 110px;
-    object-fit: cover;
+    width: 200px;
+    height: 210px;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-}
-
-.combo-imagens-coxinha {
-    padding: 15px 10px;
-    height: 160px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.combo-imagens-coxinha img {
-    width: 85%;
-    height: 120px;
-    object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-}
-
-.combo-descricao {
-    background-color: #c03d00;
-    padding: 15px;
-    text-align: center;
-    min-height: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.combo-descricao h3 {
-    font-family: "Sansita Swashed", cursive;
-    font-size: 1.25rem;
-    color: #fff;
-    font-weight: 700;
-}
-
-.linha {
-    text-align: center;
-    color: #fff;
-    padding: 20px;
-    font-size: 0.85rem;
-    letter-spacing: 0.5px;
-    border-top: 1.5px solid #d94b00;
-    font-weight: 500;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 /* RESPONSIVIDADE */
@@ -351,14 +295,17 @@ footer {
     .menu-links {
         display: none;
     }
+
     .conteudo-principal {
         flex-direction: column-reverse;
         text-align: center;
         padding: 30px 20px;
     }
+
     .texto-apresentacao h1 {
         font-size: 3rem;
     }
+
     .imagem-hamburguer img {
         width: 320px;
         margin-bottom: 20px;
@@ -369,17 +316,20 @@ footer {
     .grid-combos {
         grid-template-columns: 1fr;
     }
+
     .titulo-combos h2 {
         font-size: 2.5rem;
     }
 }
 
 footer {
+   
+    font-family: "Lexend Zetta", sans-serif;
     background-color: #d84800;
-    color: #fff;
-    padding: 30px 20px 20px 20px;
-    border-top: 1.5px solid #c03d00;
-    text-align: center;
+    color: #e7e303;
+    padding: 30px 0px 20px 0px;
+    border-top: 1.5px solid #000;
+    text-align: left;
     margin-top: 40px;
 }
 
@@ -390,12 +340,15 @@ footer {
     font-size: 0.85rem;
     margin-bottom: 25px;
     font-weight: 500;
+    padding: 0 0 0 60px;
 }
 
 .footer-bottom {
-    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    
+    text-align: center;
+    border-top: 1.5px solid #000;
     padding-top: 15px;
-    font-family: "Lexend Zetta", sans-serif;
-    font-size: 0.8rem;
+    font-size: 1rem;
     letter-spacing: 1px;
+    color: #ecece0;
 }
