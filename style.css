@@ -322,7 +322,7 @@ html {
     }
 }
 
-footer {
+.footer1 {
    
     font-family: "Lexend Zetta", sans-serif;
     background-color: #d84800;
@@ -351,4 +351,68 @@ footer {
     font-size: 1rem;
     letter-spacing: 1px;
     color: #ecece0;
+}
+#footer-log-baixo{
+    text-align: center;
+    padding-top: 15px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    color: #ecece0;
+    font-family: "Lexend Zetta", sans-serif;
+    margin-top: 15px;
+}
+.main-contato{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FBFADA;
+    padding: 50px;
+    font-family:  "Lexend Zetta";
+}
+.contatos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #FBFADA;
+    font-size: 30px;
+}
+.texto{
+    padding: 50px;
+    color: #FBFADA;
+}
+.texto{
+    text-align: center;
+    font-size: 30px;
+}
+#local-retirada{
+    padding: 100px;
+}
+#body-color{
+    background-color: #8f481a;
+}
+#barra {
+    margin-top: 15px;
+    background-color: #f64409;
+    padding: 40px 150px;
+    width: 100%;
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #000;
+    
+}
+.menu2 {
+    font-family: "Sansita Swashed" ;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    color: #ADBC9F;
+    
+}
+.menu2 p{
+       color: #fff;
+       text-decoration: none;
+}
+.top{
+    display: flex;
+    
 }
