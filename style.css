@@ -9,6 +9,7 @@ html {
     height: 100%;
     margin: 0;
     background-color: #FF7315;
+    scroll-behavior: smooth;
 }
 
 .container {
@@ -38,21 +39,20 @@ html {
     position: absolute;
     right: 0;
     top: 35px;
-    background-color: #f64409;
+    background-color: #d9d9d980;
     min-width: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-    border-radius: 5px;
     overflow: hidden;
     z-index: 10;
 }
 
 .menus a {
-    font-family: "Sansita Swashed";
+    font-family: "Lexend Zetta";
     display: flex;
     align-items: center;
     justify-content: center;
     color: #fff;
-    padding: 10px 15px;
+    padding: 10px 35px;
     text-decoration: none;
     font-size: 0.95rem;
     border-bottom: 1px solid #f64409;
@@ -198,6 +198,7 @@ html {
     height: 100%;
     object-fit: cover;
 }
+
 .local {
     margin: 0 5px 0;
     width: 20px;
@@ -258,7 +259,7 @@ html {
 }
 
 .grid-combos {
-    
+
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
@@ -323,11 +324,11 @@ html {
 }
 
 .footer1 {
-   
+
     font-family: "Lexend Zetta", sans-serif;
     background-color: #d84800;
     color: #e7e303;
-    padding: 30px 0px 20px 0px;
+    padding: 30px 0px 0px 0px;
     border-top: 1.5px solid #000;
     text-align: left;
     margin-top: 40px;
@@ -344,15 +345,16 @@ html {
 }
 
 .footer-bottom {
-    
+    background-color: #FF7315;
     text-align: center;
     border-top: 1.5px solid #000;
-    padding-top: 15px;
+    padding: 15px 0 10px 0;
     font-size: 1rem;
     letter-spacing: 1px;
     color: #ecece0;
 }
-#footer-log-baixo{
+
+#footer-log-baixo {
     text-align: center;
     padding-top: 15px;
     font-size: 1rem;
@@ -361,15 +363,20 @@ html {
     font-family: "Lexend Zetta", sans-serif;
     margin-top: 15px;
 }
-.main-contato{
+
+.main-contato {
     display: flex;
     align-items: center;
     justify-content: center;
     color: #FBFADA;
     padding: 50px;
-    font-family:  "Lexend Zetta";
+    font-family: "Lexend Zetta";
 }
-.contatos{
+.main-contato h1{
+    margin-bottom: 100px;
+}
+
+.contatos {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -377,20 +384,25 @@ html {
     color: #FBFADA;
     font-size: 30px;
 }
-.texto{
+
+.texto {
     padding: 50px;
     color: #FBFADA;
 }
-.texto{
+
+.texto {
     text-align: center;
     font-size: 30px;
 }
-#local-retirada{
+
+#local-retirada {
     padding: 100px;
 }
-#body-color{
+
+#body-color {
     background-color: #8f481a;
 }
+
 #barra {
     margin-top: 15px;
     background-color: #f64409;
@@ -398,21 +410,164 @@ html {
     width: 100%;
     border-bottom: 1px solid #000;
     border-top: 1px solid #000;
-    
+
 }
+
 .menu2 {
-    font-family: "Sansita Swashed" ;
+    font-family: "Sansita Swashed";
     display: flex;
     justify-content: space-between;
     list-style-type: none;
     color: #ADBC9F;
-    
+
+
 }
-.menu2 p{
-       color: #fff;
-       text-decoration: none;
-}
-.top{
+
+.menu2 p {
+    font-family: "Sansita Swashed";
     display: flex;
-    
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding: 10px 15px;
+    border-bottom: 1px solid #f64409;
+
+}
+
+.menu2 a {
+    text-decoration: none;
+}
+
+.menu2 p:hover {
+    background-color: #e9ab26;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 1);
+    border-radius: 35px;
+    color: #000;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+    color: #000;
+}
+
+.top-text {
+    margin-top: 5px;
+}
+
+.top-img {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    margin-bottom: 40px;
+
+}
+
+.top-img img {
+    width: 90px;
+    height: 90px;
+    border-radius: 16px;
+    object-fit: cover;
+    border: 2px solid #a0522d;
+    flex-shrink: 0;
+}
+
+.top-text h3 {
+    font-size: 1.15rem;
+    margin-bottom: 8px;
+}
+
+.top-text p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.linha-centro {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+
+    /* Estilização da palavra (Opcional - Altere como quiser) */
+    font-family: "Sansita Swashed";
+    font-size: 24px;
+    color: #c86b85;
+    /* Um tom rosa/doce */
+
+}
+
+/* Configuração das Linhas */
+.linha-centro::before,
+.linha-centro::after {
+    content: '';
+    flex: 1;
+    height: 2px;
+    background-color: #e0e0e0;
+}
+
+/* Espaço entre a palavra e as linhas */
+.linha-centro::before {
+    margin-right: 20px;
+}
+
+.linha-centro::after {
+    margin-left: 20px;
+}
+
+#footer-menu {
+    border-top: 1px solid #000;
+    text-align: center;
+    padding: 15px 0 20px 0;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    color: #ecece0;
+    font-family: "Lexend Zetta";
+    margin-top: 15px;
+}
+
+#imagem1 {
+    position: absolute;
+    width: 250px;
+    top: 100px;
+    right: 60%;
+}
+
+#imagem2 {
+    position: absolute;
+    width: 130px;
+    top: 390px;
+    right: 66.8%;
+}
+#imagem3 {
+    position: absolute;
+    width: 230px;
+    top: 540px;
+    right: 60%;
+}
+#imagem4 {
+    position: absolute;
+    width: 290px;
+    top: 80px;
+    right: 20.8%;
+}
+#imagem5 {
+    position: absolute;
+    width: 250px;
+    top: 600px;
+    right: 26.8%;
+}
+#imagem6 {
+    position: absolute;
+    width: 290px;
+    top: 380px;
+    right: 20.8%;
+}
+#imagem7 {
+    position: absolute;
+    width: 1356px;
+    top: 90px;
+    right: 15%;
 }
